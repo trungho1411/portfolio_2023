@@ -6,7 +6,11 @@ import headerImg from '../assets/img/header-img.svg';
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ['Web Developer', 'Web Designer', 'UX/UI Designer'];
+  const toRotate = [
+    ',Web Developer.',
+    ',nice to meet you.',
+    ',UX/UI Newbie Designer.',
+  ];
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -52,11 +56,15 @@ export const Banner = () => {
               {`Hi I'm Ho Trung `}
               <span className='wrap'>{text}</span>
             </h1>
-            <p>2023</p>
-            <button onClick={() => console.log('connect')}>
-              Let's connect
-              <ArrowRightCircle size={25} />
-            </button>
+            <p>
+              Information Technology student pursuing Bachelor Degree seeking
+              internship opportunity to gain hands-on experience. Outgoing and
+              friendly with strong motivation for success. I am eager to
+              contribute developed knowledge in Web Developer role. Skilled in
+              HTML/CSS/JavaScript and React.js. Adaptable and driven with strong
+              work ethic and motivation to thrive in team-based or individually
+              motivated settings.
+            </p>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt='Header Img' />

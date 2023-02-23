@@ -27,11 +27,11 @@ export const Contact = () => {
     setButtonText('Sending ...');
     let response = await fetch('http://localhost:5000/contact', {
       method: 'POST',
-      headers: { 'Content-Type': 'Application/json;charset=utf-8' },
+      headers: { 'Content-Type': 'application/json;charset=utf-8' },
       body: JSON.stringify(formDetails),
     });
     setButtonText('Send');
-    let result = response.json();
+    let result = await response.json();
     setFormDetails(formInitialDetails);
     if (result.code === 200) {
       setStatus({ success: true, message: 'Message sent successfully' });
@@ -91,7 +91,7 @@ export const Contact = () => {
                     row='6'
                     value={formDetails.message}
                     placeholder='Message'
-                    onChange={(e) => onFormUpdate('phone', e.target.value)}
+                    onChange={(e) => onFormUpdate('message', e.target.value)}
                   ></textarea>
                   <button type='submit'>
                     <span>{buttonText}</span>

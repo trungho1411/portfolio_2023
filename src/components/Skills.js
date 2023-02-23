@@ -9,7 +9,7 @@ import colorSharp from '../assets/img/color-sharp.png';
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
+      // the naming can be any
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -34,7 +34,7 @@ export const Skills = () => {
           <Col>
             <div className='skill-box'>
               <h2>Skills</h2>
-              <p>ojhdfjvfbdoqppitryiizn,mnuh</p>
+              <p>Here are my skills</p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -46,15 +46,11 @@ export const Skills = () => {
                 </div>
                 <div className='item'>
                   <img src={meter2} alt='Image' />
-                  <h5>Logo Design</h5>
+                  <h5>Communication</h5>
                 </div>
                 <div className='item'>
                   <img src={meter3} alt='Image' />
-                  <h5>Brand Identity</h5>
-                </div>
-                <div className='item'>
-                  <img src={meter1} alt='Image' />
-                  <h5>Web Development</h5>
+                  <h5>HTML/CSS/JS</h5>
                 </div>
               </Carousel>
             </div>
